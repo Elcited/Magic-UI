@@ -15,6 +15,21 @@ export default defineConfig({
     },
   },
 
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (id.includes('node_modules')) {
+            if (id.includes('react')) {
+              return 'react';
+            }
+            return 'vendor';
+          }
+        },
+      },
+    },
+  },
+
   server: {
     open: true,
     port: 4000,

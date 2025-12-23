@@ -13,7 +13,7 @@ export default function CTA() {
     >
       <div className="flex flex-col w-full sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4 pt-4">
         <a
-          href="/signup"
+          href="/auth/signup"
           className={cn(
             buttonVariants({
               variant: 'default',

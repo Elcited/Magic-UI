@@ -45,14 +45,14 @@ export default function Header() {
 
             <div className="flex gap-2">
               <a
-                href="/login"
+                href="/auth/login"
                 className={buttonVariants({ variant: 'outline' })}
               >
                 Login
               </a>
 
               <a
-                href="/signup"
+                href="/auth/signup"
                 className={cn(
                   buttonVariants({ variant: 'default' }),
                   'w-full sm:w-auto text-background flex gap-2'

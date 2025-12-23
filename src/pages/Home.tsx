@@ -10,7 +10,6 @@ import Price from '@/components/sections/Price';
 import Problem from '@/components/sections/Problem';
 import Solution from '@/components/sections/Solution';
 import Testimonials from '@/components/sections/Testimonials';
-import ThemeToggle from '@/components/ThemeToggle';
 import TestimonialsCarousel from '@components/sections/TestimonialsCarousel';
 
 export default function Home() {
@@ -29,7 +28,6 @@ export default function Home() {
       <FAQ />
       <CTA />
       <Footer />
-      <ThemeToggle />
     </main>
   );
 }

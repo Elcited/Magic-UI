@@ -46,11 +46,14 @@ export default function DrawerAll() {
           </nav>
         </DrawerHeader>
         <DrawerFooter>
-          <a href="/login" className={buttonVariants({ variant: 'outline' })}>
+          <a
+            href="/auth/login"
+            className={buttonVariants({ variant: 'outline' })}
+          >
             Login
           </a>
           <a
-            href="/signup"
+            href="/auth/signup"
             className={cn(
               buttonVariants({ variant: 'default' }),
               'w-full sm:w-auto text-background flex gap-2'

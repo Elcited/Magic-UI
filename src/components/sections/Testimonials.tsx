@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-// import { cn } from '@/lib/utils';
+import { cn } from '@/lib/utils';
 import Marquee from '../animations/Marquee';
 import Section from '../Section';
 import HighLight from '../ui/HighLight';
@@ -205,11 +205,11 @@ export default function Testimonials() {
               <Marquee
                 key={index}
                 vertical
-                // className={cn({
-                //   '[animation-duration:60s]': index === 1,
-                //   '[animation-duration:10s]': index === 2,
-                //   '[animation-duration:70s]': index === 3,
-                // })}
+                className={cn({
+                  '[animation-duration:60s]': index === 1,
+                  '[animation-duration:30s]': index === 2,
+                  '[animation-duration:70s]': index === 3,
+                })}
               >
                 {testimonials
                   .slice(index * 3, (index + 1) * 3)

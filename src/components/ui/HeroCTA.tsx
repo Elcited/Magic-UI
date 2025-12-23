@@ -14,7 +14,7 @@ interface HeroCTAProps {
 export default function HeroCTA({
   ctaText = 'Get started for free',
   subText = '7 day free trial. No credit card required.',
-  href = '/signup',
+  href = '/auth/signup',
 }: HeroCTAProps) {
   return (
     <>
